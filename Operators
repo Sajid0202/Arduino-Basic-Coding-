@@ -1,0 +1,72 @@
+//Arduino Operators:
+
+//Arithmetic Operators
+//Used for mathematical operations:
+
++  Addition: x + y
+-  Subtraction: x - y
+*  Multiplication: x * y
+/  Division: x / y
+%  Modulus (remainder): x % y
+
+Example:
+int a = 10;
+int b = 3;
+int sum = a + b;   // 13
+int mod = a % b;   // 1
+
+//Assignment Operators
+//Used to assign values to variables:
+
+=   x = 5
++=  x += 3  // x = x + 3
+-=  x -= 2  // x = x - 2
+*=  x *= 2  // x = x * 2
+/=  x /= 4  // x = x / 4
+
+//Comparison Operators
+//Used to compare values. Returns true or false:
+
+==  Equal: x == y
+!=  Not equal: x != y
+>   Greater than: x > y
+<   Less than: x < y
+>=  Greater or equal: x >= y
+<=  Less or equal: x <= y
+
+//Logical Operators
+//Used to combine conditions:
+
+&&  AND: x > 5 && y < 10
+||  OR: x > 5 || y < 10
+!   NOT: !(x == y)
+
+Example Arduino Code:
+
+int a = 10;
+int b = 3;
+
+void setup() 
+{
+  Serial.begin(9600);
+
+  // Arithmetic
+  Serial.print("Sum: "); Serial.println(a + b);
+  Serial.print("Modulus: "); Serial.println(a % b);
+
+  // Assignment
+  int x = 5;
+  x += 2;
+  Serial.print("x after +=2: "); Serial.println(x);
+
+  // Comparison
+  Serial.print("Is a > b? "); Serial.println(a > b);
+
+  // Logical
+  Serial.print("Is a > 5 AND b < 5? "); Serial.println((a > 5) && (b < 5));
+}
+
+void loop() 
+{
+
+}
