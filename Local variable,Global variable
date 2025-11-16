@@ -1,0 +1,28 @@
+//Local Variable: A local variable is a variable that is declared inside a function(example: inside setup() or loop())
+//Global Variable: A global variable is a variable that is declared outside all functions, usually at the top of the program.
+//code for local variable 
+
+void setup ()
+{
+Serial.begin(9600);
+int x=2; //Variable only for setup function
+serial.println(x);
+}
+void loop ()
+{
+serial.println(x); // error 
+}
+
+//code for global variable 
+
+int x=2 //Variable for all functions 
+void setup ()
+{
+Serial.begin(9600);
+serial.println(x);
+}
+void loop ()
+{
+serial.println(x);
+} 
+//No error 
