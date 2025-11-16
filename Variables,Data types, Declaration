@@ -1,0 +1,21 @@
+//Variables Types:
+//Integer 1,2,3,5,100,1000  
+//Float 2.5 , 3.1416 , 9.8 
+//char "a','b','c','x",'y','z' 
+//String "red", "ball", "car", "Hello World" 
+
+//Simple code:
+
+void setup ()
+{
+//Variable Declaration : data_type(int,float) variable_name(anything); 
+int speed=200; 
+float pie=3.1416; 
+char a; 
+String word;
+ serial.println(speed);
+}
+void loop ()
+{
+
+}
