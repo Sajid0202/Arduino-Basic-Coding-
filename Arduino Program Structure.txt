@@ -1,0 +1,50 @@
+Description: 
+void setup()
+Runs ONLY ONCE when Arduino powers on or resets.
+Used for initialization.
+Typical things done here:
+• Setting pinMode (input/output)
+• Starting serial monitor
+• Initializing sensors
+• Starting motors/modules
+Think of setup() as:
+ "Prepare everything before starting the main task."
+ void loop()
+Runs again and again forever (infinite loop).
+This is where your main program logic runs.
+Everything the Arduino must keep doing goes here:
+• blinking LED repeatedly
+• reading sensors continuously
+• controlling motors
+• checking buttons
+• running PID
+• anything that must repeat
+Think of loop() as:
+ "Do this again and again until power is off."
+
+Code: 
+void setup()
+ {
+  Serial.begin(9600);   // Start serial communication at 9600 baud rate
+}
+void loop()
+ {
+  Serial.println("Hello World");  
+// Send text to Serial Monitor
+  delay(1000);       // Wait 1 second
+}
+
+Explanation:
+void setup()
+Serial.begin(9600);
+This starts serial communication between your Arduino and your computer.
+The number 9600 is the baud rate (speed of communication).
+It means Arduino sends data at 9600 bits per second.
+You must set the Serial Monitor to the same baud rate.
+
+Serial.println("Hello World");
+Sends this message to the Serial Monitor.
+println prints the text and automatically moves to the next line.
+delay(1000);
+Waits for 1 second (1000 ms).
+So the message is printed once per second.
