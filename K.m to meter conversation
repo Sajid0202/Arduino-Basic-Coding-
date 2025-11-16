@@ -1,0 +1,15 @@
+float km = 5.0;
+float meters;
+
+void setup() 
+{
+  Serial.begin(9600);
+  meters = km * 1000;
+  Serial.print("Meters = ");
+  Serial.print(meters);
+}
+
+void loop() 
+{
+  
+}
