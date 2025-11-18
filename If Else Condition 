@@ -1,0 +1,56 @@
+void setup ()
+{
+Serial.begin(9600);
+}
+void loop ()
+{
+if(Serial.available ()>0)
+{
+char i=Serial.read ();
+if(i=='s' || i=='S')
+{
+Serial.print("This is a Sunny day.");
+}
+else if(i=='r' || i=='R')
+{
+Serial.print("This is a Rainy day.");
+}
+else 
+{
+Serial.print("Kuch bi nehi lol");
+}
+
+}
+
+}
+
+
+//Largest Number between 3 numbers 
+
+void setup ()
+{
+Serial.begin(9600);
+}
+void loop ()
+{
+if(Serial.available ()>0)
+{
+int x=Serial.parseInt ();
+int y=Serial.parseInt ();
+int z=Serial.parseInt ();
+if(x>y && x>z)
+{
+Serial.print(x);Serial.print(" is the largest number.");
+}
+else if(y>x && y>z)
+{
+Serial.print(y);Serial.print(" is the largest number.");
+}
+else 
+{
+Serial.print(z);Serial.print(" is the largest number");
+}
+
+}
+
+}
