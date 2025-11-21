@@ -1,0 +1,21 @@
+void setup ()
+{
+Serial.begin(9600);
+}
+void loop ()
+{
+if(Serial.available ()>0)
+{
+int x=Serial.parseInt ();
+if(x>0)
+{
+Serial.print(x);Serial.print(" is the positive number.");
+}
+else
+{
+Serial.print(x);Serial.print(" is the negative number.");
+}
+
+}
+
+}
