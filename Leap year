@@ -1,0 +1,21 @@
+void setup ()
+{
+Serial.begin(9600);
+}
+void loop ()
+{
+if(Serial.available ()>0)
+{
+int x=Serial.parseInt ();
+if(x%4==0 && x%100!=0)
+{
+Serial.print(x);Serial.print(" is the leap year.");
+}
+else
+{
+Serial.print(x);Serial.print(" is not the leap year.");
+}
+
+}
+
+}
